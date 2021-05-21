@@ -3,6 +3,7 @@ $(document).ready(function () {
     loop: true,
     nav: true,
     navText: false,
+    smartSpeed: 1000,
     responsive: {
       0: {
         items: 1,
@@ -18,10 +19,10 @@ $(document).ready(function () {
 
   $(".post-content").owlCarousel({
     loop: true,
-    margin: 10,
     nav: true,
     navText: false,
     dots: false,
+    smartSpeed: 1000,
     responsive: {
       0: {
         items: 1,
@@ -33,13 +34,6 @@ $(document).ready(function () {
         items: 3,
       },
     },
-  });
-
-  $(".burger").on("click", function () {
-    $(".menu").addClass("active");
-  });
-  $(".close").on("click", function () {
-    $(".menu").removeClass("active");
   });
 
   $("ul.project-caption").on("click", "li:not(.active)", function () {
