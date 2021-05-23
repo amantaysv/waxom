@@ -35,6 +35,8 @@ $(document).ready(function () {
       },
     },
   });
+  
+  AOS.init();
 
   $("ul.project-caption").on("click", "li:not(.active)", function () {
     $(this)
